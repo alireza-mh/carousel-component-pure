@@ -1,7 +1,6 @@
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+import CarouselContainer from 'src/components/carouselContainer'
 
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.background = 'skyblue';
-    $('.owl-carousel').owlCarousel({lazyLoad: true});
+    const containerNumber = new CarouselContainer();
 });

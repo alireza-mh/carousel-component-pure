@@ -73,4 +73,10 @@ module.exports = {
       "window.jQuery": "jquery",
     }),
   ],
+  resolve: {
+    extensions: [".js", ".ts"],
+    alias: {
+      src: path.resolve(__dirname, "src"),
+    },
+  }
 };
