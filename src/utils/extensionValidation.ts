@@ -1,4 +1,4 @@
-const extensionValidation = (filePath:string, allowedExtensions:string[] = ['jpg', 'jpeg']) => {
+const extensionValidation = (filePath:string, allowedExtensions:string[] = ['jpg']) => {
     const filePathArray: string[] = filePath.split('.');
     if(filePathArray.length < 1 || filePathArray[0] === ''){
         return false;

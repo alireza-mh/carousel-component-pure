@@ -1,6 +1,8 @@
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
 import semiUniqe from "src/utils/semiRandom";
+import arrow from "./asset/arrow.png";
+import "./style.css";
 
 export interface ICarouselComponent {
   componentName?: string;
@@ -16,6 +18,7 @@ class Carousel implements ICarouselComponent {
   mountSelector: string;
   childs: any;
   owlCarousel: OwlCarousel.Options;
+  navText: string[];
 
   constructor(name: string, mountSelector, childs, owlCarousel = {}) {
     this.uniqeComponentName = name || `carousel-${semiUniqe()}`;
@@ -23,18 +26,22 @@ class Carousel implements ICarouselComponent {
     this.childs = childs;
     this.mountSelector = mountSelector;
     this.owlCarousel = owlCarousel;
+    this.navText = [
+      `<img class='carousel-arrow carousel-arrow_left' src='${arrow}'/>`,
+      `<img class='carousel-arrow carousel-arrow_right' src='${arrow}'/>`,
+    ];
     this.render();
   }
 
-  destroy(){
+  destroy() {
     $(this.mountSelector).owlCarousel("destroy");
-    console.log('here destroy');
   }
+
   render() {
     /* destroy in case it exist (its not perfect)  */
     $(this.mountSelector).owlCarousel("destroy");
     $(this.mountSelector).append(Array.isArray(this.childs) ? this.childs.join("") : this.childs);
-    $(this.mountSelector).owlCarousel({ lazyLoad: true });
+    $(this.mountSelector).owlCarousel({ lazyLoad: true, nav: true, navText: this.navText, ...this.owlCarousel });
   }
 }
 
