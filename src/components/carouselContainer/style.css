@@ -1,0 +1,43 @@
+:root{
+--form-element-height: 30px
+}
+.container-carousel form{
+    /* remove space between btn and input - did it here insted of js code for readibility purpose */
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.container-input, .container-btn, .container-btn-reset{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.container-input{
+    height: var(--form-element-height);
+    width: 350px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+.container-btn{
+    height: var(--form-element-height);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+    cursor: pointer;
+}
+.container-btn:hover{
+    background-color: lightgray;
+}
+.container-btn-reset{
+    height: var(--form-element-height);
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.input-error{
+    border: 1px solid red;
+    box-shadow: 0px 0px 19px 0px rgba(255,0,25,1);
+}

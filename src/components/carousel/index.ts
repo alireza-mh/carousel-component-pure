@@ -5,8 +5,10 @@ import semiUniqe from "src/utils/semiRandom";
 export interface ICarouselComponent {
   componentName?: string;
   mountSelector?: string;
+  owlCarousel?: OwlCarousel.Options;
   render?: () => void;
   addItem?: (elem: string) => void;
+  destroy?: () => void;
 }
 class Carousel implements ICarouselComponent {
   uniqeComponentName: string;
@@ -24,6 +26,10 @@ class Carousel implements ICarouselComponent {
     this.render();
   }
 
+  destroy(){
+    $(this.mountSelector).owlCarousel("destroy");
+    console.log('here destroy');
+  }
   render() {
     /* destroy in case it exist (its not perfect)  */
     $(this.mountSelector).owlCarousel("destroy");

@@ -1,8 +1,8 @@
-const extensionValidation = (filePath:string, ext:string = 'jpg') => {
+const extensionValidation = (filePath:string, allowedExtensions:string[] = ['jpg', 'jpeg']) => {
     const filePathArray: string[] = filePath.split('.');
-    if(filePathArray.length === 0){
+    if(filePathArray.length < 1 || filePathArray[0] === ''){
         return false;
     }
-    return filePathArray[filePathArray.length - 1].match(ext);
+    return allowedExtensions.some(extension => RegExp(`^${extension}$`,'gi').test(filePathArray[filePathArray.length - 1]));
 }
 export default extensionValidation;
