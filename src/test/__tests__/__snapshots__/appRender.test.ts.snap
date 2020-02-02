@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="root"
+>
+  
+            
+  <div
+    class="container-carousel"
+    id="test1"
+  >
+    
+              
+    <form
+      action="/"
+    >
+      
+                
+      <input
+        class="container-input"
+        placeholder="insert image link"
+        required=""
+        type="text"
+      />
+      
+                
+      <button
+        class="container-btn"
+        type="submit"
+      >
+        Submit
+      </button>
+      
+                
+              
+    </form>
+    
+            
+    <div
+      class="owl-carousel"
+      id="test1-carousel"
+    >
+      
+            
+    </div>
+    
+            
+  </div>
+  
+          
+  
+            
+  <div
+    class="container-carousel"
+    id="test2"
+  >
+    
+              
+    <form
+      action="/"
+    >
+      
+                
+      <input
+        class="container-input"
+        placeholder="insert image link"
+        required=""
+        type="text"
+      />
+      
+                
+      <button
+        class="container-btn"
+        type="submit"
+      >
+        Submit
+      </button>
+      
+                
+      <button
+        class="container-btn-reset"
+        type="reset"
+      >
+        Reset
+      </button>
+      
+              
+    </form>
+    
+            
+    <div
+      class="owl-carousel"
+      id="test2-carousel"
+    >
+      
+            
+    </div>
+    
+            
+  </div>
+  
+          
+</div>
+`;
