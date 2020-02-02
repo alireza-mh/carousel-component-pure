@@ -15,6 +15,16 @@ Also, there is a command that builds and serves the project(port 8000):
 npm run build-serve
 ```
 
+### Run Tests 
+please use follow command to run tests:
+
+```bash
+npm test
+```
+Also for E2E test you can run:
+```bash 
+npm run cypress:open
+```
 ### Notice
 There could be many improvements and I hope we would discuss them further.
 I have created a boilerplate for vanilla js and ts and you can find it [here](https://github.com/alireza-mh/Vanilla-js-ts-boilerplate)
