@@ -26,12 +26,9 @@ Also for E2E test you can run:
 npm run cypress:open
 ```
 ### Notice
-There could be many improvements and I hope we would discuss them further.
-I have created a boilerplate for vanilla js and ts and you can find it [here](https://github.com/alireza-mh/Vanilla-js-ts-boilerplate)
+this project has been created with the boilerplate for vanilla js and ts and you can find it [here](https://github.com/alireza-mh/Vanilla-js-ts-boilerplate)
 
-Unfortunately, I didn't find time to use image API to search images and populate them to the carousels.
-
+### Todo
 You can add image link or links (separate via `,`)to populate images to the carousel.
 please include `http or https`(some of the improvement that can be handled by code).
 every time you add an image a new one will append to the carousel.
-It took a little more time than my estimation. :)
