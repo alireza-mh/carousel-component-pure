@@ -1,5 +1,5 @@
 # Carousel challenge 
-
+This is a carousel component based on `owl carousel`. This project tried to use an approach for writing reusable and readable component. Any contribution that helps to achieve these goals better are welcomed.
 ### Develop and Build
 
 You can use the below command to run the project in development mode(port 8080):
