@@ -32,7 +32,10 @@ class Carousel implements ICarouselComponent {
     ];
     this.render();
   }
-
+  /**
+   * @method destroy
+   * @description destory owl carousel 
+   */
   destroy() {
     $(this.mountSelector).owlCarousel("destroy");
   }

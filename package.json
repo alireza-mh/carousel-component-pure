@@ -1,7 +1,7 @@
 {
-  "name": "VanillaPage",
-  "version": "1.0.0",
-  "description": "",
+  "name": "Carousel Component(Vanilla JS)",
+  "version": "1.0.2",
+  "description": "implementation of carousel with vanilla js",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -11,8 +11,8 @@
     "build-serve": "npm run build && npm run serve",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["carousel", "vanilla component"],
+  "author": "Alireza Mahmoodi",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.3",
